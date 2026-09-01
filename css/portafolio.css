@@ -168,7 +168,9 @@ main > section {
 .proyectos-card {
     background-color: white;
     border: 1px solid #e5e7eb;
-    border-radius: 5px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
     width: 340px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
@@ -189,6 +191,10 @@ main > section {
     font-size: 0.75rem;
     color: var(--gris);
     padding: 5px 15px 0;
+}
+
+.proyectos-card h3::before {
+    content: "> ";
 }
 
 .proyectos-card h3 {
